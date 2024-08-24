@@ -28,6 +28,16 @@ public class Enrollment {
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt = LocalDateTime.now();
 
+    public Enrollment() {}
+    public Enrollment(Long id, Session session, String sessionType, User user, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
+        this.session = session;
+        this.sessionType = sessionType;
+        this.user = user;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
     // Getters y Setters
 
     public Long getId() {

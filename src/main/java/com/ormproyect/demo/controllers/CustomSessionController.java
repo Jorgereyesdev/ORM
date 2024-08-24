@@ -1,6 +1,6 @@
 package com.ormproyect.demo.controllers;
 
-import com.ormproyect.demo.entities.CustomSession;
+import com.ormproyect.demo.entities.customsession.CustomSession;
 import com.ormproyect.demo.services.CustomSessionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

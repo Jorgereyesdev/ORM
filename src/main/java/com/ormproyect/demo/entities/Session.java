@@ -39,6 +39,21 @@ public class Session {
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt = LocalDateTime.now();
 
+    public Session() {}
+
+    public Session(Long id, User trainer, String name, String description, String image, Integer capacity, LocalDateTime startTime, LocalDateTime endTime, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
+        this.trainer = trainer;
+        this.name = name;
+        this.description = description;
+        this.image = image;
+        this.capacity = capacity;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
     // Getters y Setters
 
     public Long getId() {

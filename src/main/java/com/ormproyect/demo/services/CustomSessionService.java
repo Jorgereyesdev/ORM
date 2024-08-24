@@ -1,6 +1,6 @@
 package com.ormproyect.demo.services;
 
-import com.ormproyect.demo.entities.CustomSession;
+import com.ormproyect.demo.entities.customsession.CustomSession;
 import com.ormproyect.demo.repositories.CustomSessionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

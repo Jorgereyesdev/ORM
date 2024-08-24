@@ -35,6 +35,20 @@ public class User {
     )
     private Set<Role> roles;
 
+    public User() {
+
+    }
+
+    public User(Long id, String name, String email, String password, LocalDateTime createdAt, LocalDateTime updatedAt, Set<Role> roles) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.roles = roles;
+    }
+
     // Getters y Setters
 
     public Long getId() {

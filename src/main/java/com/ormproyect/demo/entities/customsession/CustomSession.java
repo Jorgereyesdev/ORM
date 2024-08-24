@@ -1,5 +1,6 @@
-package com.ormproyect.demo.entities;
+package com.ormproyect.demo.entities.customsession;
 
+import com.ormproyect.demo.entities.User;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -34,6 +35,18 @@ public class CustomSession {
 
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt = LocalDateTime.now();
+
+    public  CustomSession() {}
+    public CustomSession(Long id, User user, User trainer, String description, LocalDateTime requestedDate, CustomSessionStatus status, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
+        this.user = user;
+        this.trainer = trainer;
+        this.description = description;
+        this.requestedDate = requestedDate;
+        this.status = status;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
 
     // Getters y Setters
 
